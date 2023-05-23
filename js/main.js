@@ -8,38 +8,33 @@ var swiper = new Swiper(".swiper-container", {
     prevEl: ".sw-prev",
   },
   breakpoints: {
-    650: {
+    0: {
       slidesPerView: 1,
     },
-    992: {
+    650: {
       slidesPerView: 2,
     },
-    1300: {
+    992: {
       slidesPerView: 3,
     },
   },
 });
-// Pagination for serviceSlider
-var allSlides = $(".swiper-slide").length;
-// $('.ns-total').html(' /'+allSlides);
-$(".sw-next").click(function () {
+var allSlides = document.querySelector(".swiper-slide").length;
+document.querySelector(".sw-next").addEventListener("click", () => {
   if (activeSlides == allSlides) {
     activeSlides = allSlides;
   } else {
     activeSlides += 2;
-    // $('.ns-active').html(activeSlides);
   }
-});
-$(".sw-prev").click(function () {
+})
+document.querySelector(".sw-prev").addEventListener("click", () => {
   if (activeSlides == minValueSlide) {
     activeSlides = minValueSlide;
   } else {
     activeSlides -= 2;
-    // $('.ns-active').html(activeSlides);
   }
-});
+})
 
-// for adaptive
 var activeSlides;
 var minValueSlide;
 function variChange(winWidth) {
@@ -63,32 +58,10 @@ function variChange(winWidth) {
     // $('.ns-active').html(activeSlides);
   }
 }
-variChange($(window).width()); // $(window).width() - ширина экрана
-$(window).resize(function () {
-  variChange($(window).width());
-});
-
-// document.querySelectorAll(".question-answer-list-point").forEach((e, index) => {
-//   let accordHeight = e.querySelector(".question-answer-list-point-second-text-container").clientHeight;
-
-//   e.querySelector(".question-answer-list-point-second-text-container").style.height = "0px";
-
-//   e.addEventListener("click", () => {
-//     if (document.querySelectorAll(".question-answer-list-point")[index].className == "question-answer-list-point active") {
-//       document.querySelectorAll(".question-answer-list-point-main-text-image")[index].src = "img/plus.svg";
-//     } else {
-//       document.querySelectorAll(".question-answer-list-point-main-text-image")[index].src = "img/minus.svg";
-//     }
-//     document.querySelectorAll(".question-answer-list-point")[index].classList.toggle("active");
-
-//     if (document.querySelectorAll(".question-answer-list-point")[index].classList.contains("active")) {
-//       e.querySelector(".question-answer-list-point-second-text-container").style.height = accordHeight + "px";
-//     } else {
-//       e.querySelector(".question-answer-list-point-second-text-container").style.height = "0px";
-//     }
-//   });
-// });
-
+variChange(window.innerWidth); // $(window).width() - ширина экрана
+document.addEventListener("resize", function () {
+  variChange(window.innerWidth);
+})
 
 document.querySelectorAll(".question-answer-list-point-main-text-container").forEach((e, index) => {
   let containerParent = e.parentNode;
@@ -111,3 +84,42 @@ document.querySelectorAll(".question-answer-list-point-main-text-container").for
     }
   });
 });
+
+document.querySelectorAll(".footer-mobile-list-point-main-text-container").forEach((e, index) => {
+  let containerParent = e.parentNode;
+  let accordHeight = containerParent.querySelector(".footer-mobile-list-point-second-text-container").clientHeight;
+
+  containerParent.querySelector(".footer-mobile-list-point-second-text-container").style.height = "0px";
+
+  e.addEventListener("click", () => {
+    document.querySelectorAll(".footer-mobile-list-point")[index].classList.toggle("active");
+    document.querySelectorAll(".footer-mobile-list-point-main-text-image")[index].classList.toggle("active");
+    if (document.querySelectorAll(".footer-mobile-list-point")[index].classList.contains("active")) {
+      containerParent.querySelector(".footer-mobile-list-point-second-text-container").style.height = accordHeight + "px";
+    } else {
+      containerParent.querySelector(".footer-mobile-list-point-second-text-container").style.height = "0px";
+    }
+  });
+});
+
+document.querySelectorAll(".header-burger-list-point-main-text-container").forEach((e, index) => {
+  // let containerParent = e.parentNode;
+  // let accordHeight = containerParent.querySelector(".header-burger-list-point-second-text-container").clientHeight;
+
+  // containerParent.querySelector(".header-burger-list-point-second-text-container").style.height = "0px";
+
+  e.addEventListener("click", () => {
+    document.querySelectorAll(".header-burger-list-point-second-text-container")[index].classList.toggle("active");
+    document.querySelectorAll(".header-burger-list-point-main-text-image")[index].classList.toggle("active");
+    // if (document.querySelectorAll(".header-burger-list-point")[index].classList.contains("active")) {
+    //   containerParent.querySelector(".header-burger-list-point-second-text-container").style.height = accordHeight + "px";
+    // } else {
+    //   containerParent.querySelector(".header-burger-list-point-second-text-container").style.height = "0px";
+    // }
+  });
+});
+
+document.querySelector(".header-burger-button").addEventListener("click", () => {
+  document.querySelector(".header-burger-button").classList.toggle("active")
+  document.querySelector(".header").classList.toggle("burger-active")
+})
