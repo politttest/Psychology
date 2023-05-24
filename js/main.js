@@ -2,7 +2,7 @@ var swiper = new Swiper(".swiper-container", {
   slidesPerView: 4,
   slidesPerColumn: 2,
   spaceBetween: 0,
-  allowTouchMove: false,
+  allowTouchMove: true,
   navigation: {
     nextEl: ".sw-next",
     prevEl: ".sw-prev",
@@ -58,7 +58,7 @@ function variChange(winWidth) {
     // $('.ns-active').html(activeSlides);
   }
 }
-variChange(window.innerWidth); // $(window).width() - ширина экрана
+variChange(window.innerWidth);
 document.addEventListener("resize", function () {
   variChange(window.innerWidth);
 })
@@ -70,13 +70,8 @@ document.querySelectorAll(".question-answer-list-point-main-text-container").for
   containerParent.querySelector(".question-answer-list-point-second-text-container").style.height = "0px";
 
   e.addEventListener("click", () => {
-    if (document.querySelectorAll(".question-answer-list-point")[index].className == "question-answer-list-point active") {
-      document.querySelectorAll(".question-answer-list-point-main-text-image")[index].src = "img/plus.svg";
-    } else {
-      document.querySelectorAll(".question-answer-list-point-main-text-image")[index].src = "img/minus.svg";
-    }
+    e.querySelectorAll(".question-answer-list-point-main-button-span")[1].classList.toggle("active")
     document.querySelectorAll(".question-answer-list-point")[index].classList.toggle("active");
-
     if (document.querySelectorAll(".question-answer-list-point")[index].classList.contains("active")) {
       containerParent.querySelector(".question-answer-list-point-second-text-container").style.height = accordHeight + "px";
     } else {
@@ -123,3 +118,7 @@ document.querySelector(".header-burger-button").addEventListener("click", () => 
   document.querySelector(".header-burger-button").classList.toggle("active")
   document.querySelector(".header").classList.toggle("burger-active")
 })
+
+Fancybox.bind("[data-fancybox]", {
+  // Your custom options
+});
