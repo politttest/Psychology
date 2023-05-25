@@ -1,3 +1,5 @@
+@charset "UTF-8";
+
 .banner {
   padding-top: 110px;
 }
@@ -237,11 +239,11 @@
 
 .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point:last-child {
   border: none;
-  padding: 0;
+  padding-bottom: 0;
 }
 
 .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point:first-child {
-  padding: 0;
+  padding-top: 0;
 }
 
 .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-image {
@@ -262,4 +264,618 @@
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
+}
+
+.list-certificate {
+  margin-top: 42px;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 50px;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-main {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 24px;
+  color: #3d3d3d;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-second {
+  font-weight: 400;
+  font-size: 15px;
+  color: #3d3d3d;
+  line-height: 21px;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery .list-certificate-gallery-link {
+  margin-right: 5px;
+  margin-bottom: 10px;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery .list-certificate-gallery-link .list-certificate-gallery-link-image {
+  max-height: 215px;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container .swiper {
+  display: none;
+}
+
+.list-certificate .list-certificate-content .list-certificate-container .sw-nav {
+  display: none;
+}
+
+@media screen and (max-width: 992px) {
+  .banner {
+    padding-top: 100px;
+  }
+
+  .banner .banner-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner .banner-content .banner-text-container {
+    margin-top: 0;
+    width: 100%;
+    margin-right: inherit;
+  }
+
+  .banner .banner-content .banner-text-container .banner-text {
+    font-weight: 500;
+    font-size: 48px;
+    line-height: 48px;
+    margin-bottom: 20px;
+  }
+
+  .banner .banner-content .banner-text-container .banne-bg {
+    display: none;
+  }
+
+  .table .table-content .table-container .table-row-header .table-point-header {
+    font-size: 16px;
+    line-height: 24px;
+  }
+
+  .table .table-content .table-container .table-row-header .table-point-header[data-type=year] {
+    max-width: 140px;
+  }
+
+  .table .table-content .table-container .table-row-header .table-point-header[data-type=hours] {
+    max-width: 160px;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=year] {
+    font-size: 15px;
+    max-width: 140px;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=hours] {
+    max-width: 160px;
+  }
+
+  .exp {
+    margin-top: 30px;
+  }
+
+  .exp .exp-content .exp-container {
+    padding: 20px;
+  }
+
+  .exp .exp-content .exp-container .exp-image {
+    margin-right: 15px;
+  }
+
+  .exp .exp-content .exp-container .exp-text {
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 28px;
+    color: #fff;
+  }
+
+  .list-certificate {
+    margin-top: 30px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts {
+    grid-gap: 30px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-main {
+    line-height: 22px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-second {
+    line-height: 18px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery .list-certificate-gallery-link .list-certificate-gallery-link-image {
+    max-height: 180px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .banner .banner-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .banner .banner-content .banner-text-container {
+    width: 100%;
+    margin-right: inherit;
+  }
+
+  .banner .banner-content .banner-text-container .banner-text {
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 32px;
+    margin-bottom: 20px;
+  }
+
+  .banner .banner-content .banner-text-container .banne-bg {
+    display: none;
+  }
+
+  .table {
+    margin-top: 30px;
+  }
+
+  .table .table-content .table-text {
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+
+  .table .table-content .table-container .table-row-header {
+    display: none;
+  }
+
+  .table .table-content .table-container .table-row {
+    margin: 0 15px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border-bottom: 1px solid #e2e2e2;
+    padding: 10px 0;
+  }
+
+  .table .table-content .table-container .table-row:last-child {
+    border: none;
+  }
+
+  .table .table-content .table-container .table-row .table-point {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color: #3d3d3d;
+    width: 100%;
+    padding: 2px 0;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=year] {
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 26px;
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=year]::before {
+    content: "Годы";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=program] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=program]::before {
+    content: "Программа подготовки";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=people] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=people]::before {
+    content: "Ведущие";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=intensive] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=intensive]::before {
+    content: "Интенсив — подготовка гештальт-терапевтов";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=work] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=work]::before {
+    content: "Вид работы";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=hours] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=hours]::before {
+    content: "Часов практических занятий";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=workHours] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=workHours]::before {
+    content: "Часов практических занятий";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=special] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=special]::before {
+    content: "Специальность";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=university] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=university]::before {
+    content: "ВУЗ";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=place] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=place]::before {
+    content: "Место";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=activity] {
+    max-width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .table .table-content .table-container .table-row .table-point[data-type=activity]::before {
+    content: "Деятельность";
+    line-height: 13px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #c1c1c1;
+  }
+
+  .exp {
+    margin-top: 17px;
+  }
+
+  .exp .exp-content .exp-container {
+    padding: 20px 10px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+
+  .exp .exp-content .exp-container .exp-image {
+    margin-right: 0px;
+    margin-bottom: 10px;
+  }
+
+  .exp .exp-content .exp-container .exp-text {
+    text-align: center;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 24px;
+    color: #fff;
+  }
+
+  .about-certificate {
+    margin-top: 40px;
+  }
+
+  .about-certificate .about-certificate-content .about-certificate-text {
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 32px;
+    margin-bottom: 12px;
+  }
+
+  .about-certificate .about-certificate-content .about-certificate-container {
+    padding: 15px;
+  }
+
+  .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    border: none;
+  }
+
+  .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-image {
+    max-height: 208px;
+    max-width: inherit;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: 0;
+  }
+
+  .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-text .about-certificate-point-text-main {
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 21px;
+    margin-bottom: 5px;
+  }
+
+  .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-text .about-certificate-point-text-second {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .list-certificate {
+    margin-top: 20px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container {
+    padding: 20px 15px;
+    padding-bottom: 0;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts {
+    grid-template-columns: 1fr;
+    grid-gap: 10px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-main {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-second {
+    font-size: 14px;
+    line-height: 19px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery {
+    display: none;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .swiper {
+    margin-top: 12px;
+    display: block;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-link .swiper-slide-link-image {
+    max-height: 100px;
+    margin: auto;
+    display: block;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev,
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next {
+    cursor: pointer;
+    width: 33px;
+    height: 33px;
+    border-radius: 50%;
+    background-color: #34bb8b;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+    margin: 15px;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev:hover,
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next:hover {
+    background-color: #25d89a;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev.swiper-button-disabled,
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next.swiper-button-disabled {
+    cursor: auto;
+    opacity: 0.5;
+    background-color: #34bb8b;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev.swiper-button-disabled:hover,
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next.swiper-button-disabled:hover {
+    -webkit-box-shadow: none;
+            box-shadow: none;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev.swiper-button-disabled:active,
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next.swiper-button-disabled:active {
+    background-color: #34bb8b;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev:active {
+    background-color: #24916a;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev:hover {
+    -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+            box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next:active {
+    background-color: #24916a;
+  }
+
+  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next:hover {
+    -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+            box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+  }
 }
