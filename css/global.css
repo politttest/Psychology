@@ -111,6 +111,7 @@ body {
 
 .header .header-content .header-container .header-left-part .header-left-part-list .header-left-part-list-point:hover .header-left-part-list-point-content-container {
   display: block;
+  z-index: 10;
 }
 
 .header .header-content .header-container .header-left-part .header-left-part-list .header-left-part-list-point .header-left-part-list-point-text {
@@ -473,6 +474,9 @@ body {
   margin-top: 20px;
   z-index: 1;
   font-size: 18px;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
   cursor: pointer;
 }
 
