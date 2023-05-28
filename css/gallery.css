@@ -1,5 +1,5 @@
-.gallery {
-  margin-top: 100px;
+body {
+  padding-top: 100px;
 }
 
 .gallery .gallery-content .gallery-container .gallery-text {
@@ -27,7 +27,7 @@
 }
 
 @media screen and (max-width: 768px) {
-  .gallery {
+  body {
     margin-top: 95px;
   }
 
