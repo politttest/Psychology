@@ -63,12 +63,12 @@
   transition: all 0.2s ease;
 }
 
-.banner .banner-content .banner-text-container .banner-text-button:hover {
+.banner .banner-content .banner-text-container .banner-text-button:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
-.banner .banner-content .banner-text-container .banner-text-button:active {
+.banner .banner-content .banner-text-container .banner-text-button:hover {
   background-color: #24916a;
 }
 
@@ -181,12 +181,12 @@
   transition: all 0.2s ease;
 }
 
-.services .services-content .services-card .services-card-text .services-card-button:hover {
+.services .services-content .services-card .services-card-text .services-card-button:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
-.services .services-content .services-card .services-card-text .services-card-button:active {
+.services .services-content .services-card .services-card-text .services-card-button:hover {
   background-color: #24916a;
 }
 
@@ -199,20 +199,20 @@
   background-color: #fff;
 }
 
-.services .services-content .services-card[data-type=black] .services-card-image-container:hover,
-.services .services-content .services-card[data-type=black] .services-card-button:hover {
+.services .services-content .services-card[data-type=black] .services-card-image-container:active,
+.services .services-content .services-card[data-type=black] .services-card-button:active {
   background-color: #34bb8b;
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
-.services .services-content .services-card[data-type=black] .services-card-image-container:hover .services-card-button-image path,
-.services .services-content .services-card[data-type=black] .services-card-button:hover .services-card-button-image path {
+.services .services-content .services-card[data-type=black] .services-card-image-container:active .services-card-button-image path,
+.services .services-content .services-card[data-type=black] .services-card-button:active .services-card-button-image path {
   stroke: #fff;
 }
 
-.services .services-content .services-card[data-type=black] .services-card-image-container:active,
-.services .services-content .services-card[data-type=black] .services-card-button:active {
+.services .services-content .services-card[data-type=black] .services-card-image-container:hover,
+.services .services-content .services-card[data-type=black] .services-card-button:hover {
   background-color: #34bb8b;
 }
 
@@ -230,20 +230,20 @@
   background-color: #fff;
 }
 
-.services .services-content .services-card[data-type=blue] .services-card-image-container:hover,
-.services .services-content .services-card[data-type=blue] .services-card-button:hover {
+.services .services-content .services-card[data-type=blue] .services-card-image-container:active,
+.services .services-content .services-card[data-type=blue] .services-card-button:active {
   background-color: #34bb8b;
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
-.services .services-content .services-card[data-type=blue] .services-card-image-container:hover .services-card-button-image path,
-.services .services-content .services-card[data-type=blue] .services-card-button:hover .services-card-button-image path {
+.services .services-content .services-card[data-type=blue] .services-card-image-container:active .services-card-button-image path,
+.services .services-content .services-card[data-type=blue] .services-card-button:active .services-card-button-image path {
   stroke: #fff;
 }
 
-.services .services-content .services-card[data-type=blue] .services-card-image-container:active,
-.services .services-content .services-card[data-type=blue] .services-card-button:active {
+.services .services-content .services-card[data-type=blue] .services-card-image-container:hover,
+.services .services-content .services-card[data-type=blue] .services-card-button:hover {
   background-color: #34bb8b;
 }
 
@@ -705,12 +705,12 @@
   transition: all 0.2s ease;
 }
 
-.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image-more-container:hover {
+.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image-more-container:active {
   -webkit-box-shadow: 0px 7px 15px rgba(52, 100, 175, 0.7);
           box-shadow: 0px 7px 15px rgba(52, 100, 175, 0.7);
 }
 
-.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image-more-container:active {
+.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image-more-container:hover {
   background-color: #174793;
 }
 
@@ -741,8 +741,8 @@
   transition: all 0.2s ease;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev:hover,
-.certificate .certificate-content .sw-nav .sw-next:hover {
+.certificate .certificate-content .sw-nav .sw-prev:active,
+.certificate .certificate-content .sw-nav .sw-next:active {
   background-color: #25d89a;
 }
 
@@ -753,14 +753,14 @@
   background-color: #34bb8b;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev.swiper-button-disabled:hover,
-.certificate .certificate-content .sw-nav .sw-next.swiper-button-disabled:hover {
+.certificate .certificate-content .sw-nav .sw-prev.swiper-button-disabled:active,
+.certificate .certificate-content .sw-nav .sw-next.swiper-button-disabled:active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev.swiper-button-disabled:active,
-.certificate .certificate-content .sw-nav .sw-next.swiper-button-disabled:active {
+.certificate .certificate-content .sw-nav .sw-prev.swiper-button-disabled:hover,
+.certificate .certificate-content .sw-nav .sw-next.swiper-button-disabled:hover {
   background-color: #34bb8b;
 }
 
@@ -770,11 +770,11 @@
   left: -70px;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev:active {
+.certificate .certificate-content .sw-nav .sw-prev:hover {
   background-color: #24916a;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev:hover {
+.certificate .certificate-content .sw-nav .sw-prev:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
@@ -785,11 +785,11 @@
   position: absolute;
 }
 
-.certificate .certificate-content .sw-nav .sw-next:active {
+.certificate .certificate-content .sw-nav .sw-next:hover {
   background-color: #24916a;
 }
 
-.certificate .certificate-content .sw-nav .sw-next:hover {
+.certificate .certificate-content .sw-nav .sw-next:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
@@ -829,7 +829,7 @@
 }
 
 .question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container .question-answer-list-point-main-text {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 18px;
   line-height: 24px;
 }

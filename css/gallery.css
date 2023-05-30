@@ -28,7 +28,7 @@ body {
 
 @media screen and (max-width: 768px) {
   body {
-    margin-top: 95px;
+    padding-top: 95px;
   }
 
   .gallery .gallery-content .gallery-container .gallery-text {
@@ -48,6 +48,10 @@ body {
 
   .gallery .gallery-content .gallery-container .gallery-image-container .gallery-image {
     margin-bottom: 15px;
+  }
+
+  .gallery .gallery-content .gallery-container .gallery-image-container .gallery-image:last-child {
+    margin-bottom: 0;
   }
 }
 

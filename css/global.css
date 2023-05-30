@@ -40,10 +40,6 @@ body {
   background-color: #efefef;
 }
 
-.header.burger-active .header-content .header-burger-content {
-  display: none;
-}
-
 .header .header-content .header-container {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -305,7 +301,11 @@ body {
 }
 
 .header .header-content .header-burger-content {
-  display: none;
+  -webkit-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+  transition: all 0.2s ease;
+  overflow: hidden;
+  overflow-y: auto;
 }
 
 .consultation {
@@ -480,12 +480,12 @@ body {
   cursor: pointer;
 }
 
-.consultation .consultation-content .consultation-container .consultation-form .consultation-form-inputs .consultation-form-button:hover {
+.consultation .consultation-content .consultation-container .consultation-form .consultation-form-inputs .consultation-form-button:active {
   -webkit-box-shadow: 0px 7px 25px #1c488c;
           box-shadow: 0px 7px 25px #1c488c;
 }
 
-.consultation .consultation-content .consultation-container .consultation-form .consultation-form-inputs .consultation-form-button:active {
+.consultation .consultation-content .consultation-container .consultation-form .consultation-form-inputs .consultation-form-button:hover {
   background-color: #24916a;
 }
 
@@ -818,12 +818,12 @@ body {
   transition: all 0.2s ease;
 }
 
-.button-top-link:hover {
+.button-top-link:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
-.button-top-link:active {
+.button-top-link:hover {
   background-color: #24916a;
 }
 
@@ -1146,7 +1146,6 @@ body {
   }
 
   .header .header-content .header-burger-content {
-    display: none;
     background-color: rgba(239, 239, 239, 0.85);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
@@ -1245,10 +1244,6 @@ body {
     border-right: none;
   }
 
-  .header .header-content .header-burger-content.active {
-    display: block;
-  }
-
   .consultation .consultation-content .consultation-container .consultation-form .consultation-form-inputs .consultation-form-inputs-question-container .consultation-form-inputs-question-input {
     height: 188px;
   }
@@ -1260,7 +1255,6 @@ body {
   }
 
   .header .header-content .header-burger-content {
-    display: none;
     background-color: rgba(239, 239, 239, 0.85);
     -webkit-backdrop-filter: blur(3px);
             backdrop-filter: blur(3px);
@@ -1307,7 +1301,10 @@ body {
   }
 
   .header .header-content .header-burger-content .header-burger-list .header-burger-list-point .header-burger-list-point-second-text-container {
-    display: none;
+    overflow: hidden;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
   }
 
   .header .header-content .header-burger-content .header-burger-list .header-burger-list-point .header-burger-list-point-second-text-container .header-burger-list-point-second-text {
@@ -1323,10 +1320,6 @@ body {
   }
 
   .header .header-content .header-burger-content .header-burger-list .header-burger-list-point .header-burger-list-point-second-text-container.active {
-    display: block;
-  }
-
-  .header .header-content .header-burger-content.active {
     display: block;
   }
 }

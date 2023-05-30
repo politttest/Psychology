@@ -327,3 +327,101 @@ body {
 .comment .comment-content .comment-container .comment-form-inputs .comment-form-button:active {
   background-color: #24916a;
 }
+
+@media screen and (max-width: 768px) {
+  body {
+    margin-top: 95px;
+  }
+
+  .news .news-content .news-text {
+    font-size: 22px;
+    line-height: 26px;
+    margin-bottom: 8px;
+  }
+
+  .news .news-content .news-date {
+    font-size: 13px;
+    line-height: 26px;
+    margin-bottom: 7px;
+  }
+
+  .news .news-content .news-container .news-image-container {
+    border-radius: 8px;
+    padding: 2px;
+    margin-bottom: 10px;
+  }
+
+  .news .news-content .news-container .news-image-container .news-image {
+    border-radius: 8px;
+  }
+
+  .news .news-content .news-container .news-list-container {
+    margin-bottom: 15px;
+  }
+
+  .news .news-content .news-container .news-list-container .news-list-point {
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  .news .news-content .news-container .news-buttons {
+    width: inherit;
+  }
+
+  .news .news-content .news-container .news-buttons .news-button {
+    background-color: inherit;
+    height: inherit;
+    width: inherit;
+    font-size: 14px;
+    line-height: 16px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    border-bottom: 1px solid #3d3d3d;
+  }
+
+  .news .news-content .news-container .news-buttons .news-button[data-type=prev]::before {
+    margin-top: 4px;
+    content: url("../img/news_vector_1.svg");
+    margin-right: 7px;
+  }
+
+  .news .news-content .news-container .news-buttons .news-button[data-type=next]::after {
+    margin-top: 4px;
+    content: url("../img/news_vector_2.svg");
+    margin-left: 7px;
+  }
+
+  .comment {
+    margin-top: 40px;
+  }
+
+  .comment .comment-content .comment-container {
+    padding: 17px;
+    padding-top: 22px;
+  }
+
+  .comment .comment-content .comment-container .comment-text {
+    text-align: center;
+    font-size: 28px;
+    line-height: 30px;
+    margin-bottom: 13px;
+  }
+
+  .comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container {
+    grid-template-columns: 1fr;
+    grid-gap: 15px;
+    margin-bottom: 15px;
+  }
+
+  .comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-input {
+    height: 188px;
+  }
+
+  .comment .comment-content .comment-container .comment-form-inputs .comment-form-button {
+    margin-top: 15px;
+  }
+}
