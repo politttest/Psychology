@@ -14,7 +14,11 @@ document.querySelectorAll(".blog-menu-list-point-main-text-container").forEach((
 });
 
 document.querySelector(".blog-main-mobile-in-button").addEventListener("click", () => {
-  document.querySelector(".blog-main-mobile-content").classList.toggle("active");
+  document.querySelector(".blog-main-mobile-content").style.margin = "0 0 0 600px"
+  setTimeout(() => {
+    document.querySelector(".blog-main-mobile-content").classList.toggle("active");
+    document.querySelector(".blog-main-mobile-content").style.margin = "0"
+  }, 200);
 });
 
 document.querySelector(".blog-main-mobile-button").addEventListener("click", () => {
