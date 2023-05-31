@@ -7,8 +7,7 @@ document.querySelectorAll(".header-burger-list-point-main-text-container").forEa
   headerMobileArrHeights.push(accordHeight);
 
   containerParent.querySelector(".header-burger-list-point-second-text-container").style.height = "0px";
-
-})
+});
 
 headerMobileHeight = document.querySelector(".header-burger-content").clientHeight;
 document.querySelector(".header-burger-content").style.height = "0";
@@ -16,17 +15,16 @@ document.querySelector(".header-burger-content").style.padding = "0";
 
 document.querySelector(".header-burger-button").addEventListener("click", (e) => {
   if (document.querySelector(".header-burger-button").className == "header-burger-button") {
-    document.getElementsByClassName("header-burger-button").className = "header-burger-button active"
-    console.log("awdadw111")
+    document.getElementsByClassName("header-burger-button").className = "header-burger-button active";
+    console.log("awdadw111");
     document.querySelector(".header-burger-content").style.height = headerMobileHeight + "px";
-    console.log("awdadw222")
+    console.log("awdadw222");
     document.querySelector(".header-burger-content").style.padding = "0 0 20px 0";
-    console.log("wadawd")
-    
+    console.log("wadawd");
   } else {
     document.querySelector(".header-burger-content").style.height = 0;
     document.querySelector(".header-burger-content").style.padding = 0;
-    document.getElementsByClassName("header-burger-button").className = "header-burger-button"
+    document.getElementsByClassName("header-burger-button").className = "header-burger-button";
   }
 });
 
@@ -48,16 +46,20 @@ document.querySelectorAll(".footer-mobile-list-point-main-text-container").forEa
 });
 
 document.querySelectorAll(".header-burger-list-point-main-text-container").forEach((e, index) => {
-
   e.addEventListener("click", () => {
     // document.querySelectorAll(".header-burger-list-point-second-text-container")[index].classList.toggle("active");
     document.querySelectorAll(".header-burger-list-point-main-text-image")[index].classList.toggle("active");
     if (!document.querySelectorAll(".header-burger-list-point")[index].classList.contains("active")) {
       e.parentNode.querySelector(".header-burger-list-point-second-text-container").style.height = headerMobileArrHeights[index] + "px";
-      document.querySelectorAll(".header-burger-list-point")[index].classList.toggle("active")
+      // document.querySelector(".header-burger-content").style.height += headerMobileArrHeights[index] + "px";
+      console.log(document.querySelector(".header-burger-content").clientHeight)
+      console.log( headerMobileArrHeights[index] + "px")
+      document.querySelector(".header-burger-content").style.height = (document.querySelector(".header-burger-content").clientHeight + parseInt(headerMobileArrHeights[index])) + "px"
+      document.querySelectorAll(".header-burger-list-point")[index].classList.toggle("active");
     } else {
       e.parentNode.querySelector(".header-burger-list-point-second-text-container").style.height = "0px";
-      document.querySelectorAll(".header-burger-list-point")[index].classList.toggle("active")
+      document.querySelectorAll(".header-burger-list-point")[index].classList.toggle("active");
+      document.querySelector(".header-burger-content").style.height = (document.querySelector(".header-burger-content").clientHeight - parseInt(headerMobileArrHeights[index])) + "px"
     }
   });
 });
