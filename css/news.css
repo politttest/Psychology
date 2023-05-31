@@ -89,6 +89,7 @@ body {
 }
 
 .news .news-content .news-container .news-buttons .news-button {
+  color: #141414;
   background-color: #fff;
   border-radius: 2px;
   height: 55px;
@@ -320,12 +321,12 @@ body {
 }
 
 .comment .comment-content .comment-container .comment-form-inputs .comment-form-button:hover {
-  -webkit-box-shadow: 0px 7px 25px #1c488c;
-          box-shadow: 0px 7px 25px #1c488c;
+  background-color: #24906A;
 }
 
 .comment .comment-content .comment-container .comment-form-inputs .comment-form-button:active {
-  background-color: #24916a;
+  -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+          box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
 @media screen and (max-width: 768px) {

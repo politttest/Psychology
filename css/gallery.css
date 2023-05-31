@@ -26,6 +26,14 @@ body {
   border-radius: 10px;
 }
 
+.gallery .gallery-content .gallery-container .grid .grid-item .grid-item-image {
+  margin-bottom: 15px;
+  max-width: 367px;
+  display: block;
+  border-radius: 10px;
+  width: 100%;
+}
+
 @media screen and (max-width: 768px) {
   body {
     padding-top: 95px;
