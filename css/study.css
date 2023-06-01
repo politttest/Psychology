@@ -2,30 +2,30 @@
   padding-top: 110px;
 }
 
-.banner .banner-content {
+.banner-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.banner .banner-content .banner-text-container {
+.banner-text-container {
   margin-top: 30px;
   width: 100%;
   margin-right: 35px;
   position: relative;
 }
 
-.banner .banner-content .banner-text-container .banner-text {
+.banner-text {
   font-weight: 500;
   font-size: 55px;
   line-height: 55px;
 }
 
-.banner .banner-content .banner-text-container .banner-bg {
+.banner-bg {
   margin-top: 50px;
 }
 
-.banner .banner-content .banner-text-container .banner-bg-vector {
+.banner-bg-vector {
   position: absolute;
   left: 9px;
   bottom: -357px;
@@ -34,7 +34,7 @@
           transform: translate(-100%);
 }
 
-.banner .banner-content .banner-image-container .banner-image {
+.banner-image {
   border-radius: 14px;
   padding: 5px;
   background-color: #fff;
@@ -50,29 +50,29 @@
   overflow: hidden;
 }
 
-.table .table-content {
+.table-content {
   position: relative;
 }
 
-.table .table-content .table-bg-vector {
+.table-bg-vector {
   position: absolute;
   top: 100px;
   right: -300px;
 }
 
-.table .table-content .table-text {
+.table-text {
   font-weight: 500;
   font-size: 35px;
   line-height: 45px;
   margin-bottom: 12px;
 }
 
-.table .table-content .table-container {
+.table-container {
   background-color: #fff;
   border-radius: 10px;
 }
 
-.table .table-content .table-container .table-row-header {
+.table-row-header {
   border-top-left-radius: 10px;
   border-top-right-radius: 10px;
   background-color: #3464af;
@@ -87,7 +87,7 @@
   padding-bottom: 10px;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header {
+.table-point-header {
   font-weight: 600;
   font-size: 18px;
   line-height: 30px;
@@ -95,50 +95,50 @@
   width: 100%;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=year] {
+.table-point-header[data-type=year] {
   max-width: 160px;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=program] {
+.table-point-header[data-type=program] {
   max-width: 350px;
   margin-right: 40px;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=people] {
+.table-point-header[data-type=people] {
   max-width: 270px;
   margin-right: 20px;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=intensive],
-.table .table-content .table-container .table-row-header .table-point-header[data-type=work] {
+.table-point-header[data-type=intensive],
+.table-point-header[data-type=work] {
   max-width: 636px;
   margin-right: 40px;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=hours] {
+.table-point-header[data-type=hours] {
   max-width: 240px;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=workHours] {
+.table-point-header[data-type=workHours] {
   max-width: 143px;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=special] {
+.table-point-header[data-type=special] {
   max-width: 240px;
   margin-right: 40px;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=university] {
+.table-point-header[data-type=university] {
   max-width: 530px;
   width: 100%;
 }
 
-.table .table-content .table-container .table-row-header .table-point-header[data-type=place] {
+.table-point-header[data-type=place] {
   max-width: 440px;
   margin-right: 40px;
 }
 
-.table .table-content .table-container .table-row {
+.table-row {
   margin: 0 30px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -146,11 +146,11 @@
   border-bottom: 1px solid #e2e2e2;
 }
 
-.table .table-content .table-container .table-row:last-child {
+.table-row:last-child {
   border: none;
 }
 
-.table .table-content .table-container .table-row .table-point {
+.table-point {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -159,52 +159,52 @@
   padding: 20px 0;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=year] {
+.table-point[data-type=year] {
   font-weight: 600;
   font-size: 18px;
   line-height: 26px;
   max-width: 160px;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=program] {
+.table-point[data-type=program] {
   max-width: 350px;
   margin-right: 40px;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=people] {
+.table-point[data-type=people] {
   max-width: 270px;
   margin-right: 20px;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=intensive],
-.table .table-content .table-container .table-row .table-point[data-type=work] {
+.table-point[data-type=intensive],
+.table-point[data-type=work] {
   max-width: 636px;
   margin-right: 40px;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=hours] {
+.table-point[data-type=hours] {
   max-width: 240px;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=workHours] {
+.table-point[data-type=workHours] {
   max-width: 143px;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=special] {
+.table-point[data-type=special] {
   max-width: 240px;
   margin-right: 40px;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=university] {
+.table-point[data-type=university] {
   max-width: 530px;
 }
 
-.table .table-content .table-container .table-row .table-point[data-type=place] {
+.table-point[data-type=place] {
   max-width: 440px;
   margin-right: 40px;
 }
 
-.table .table-content .table-container .table-row .table-point .table-point-second-text {
+.table-point-second-text {
   display: none;
 }
 
@@ -212,7 +212,7 @@
   margin-top: 50px;
 }
 
-.exp .exp-content .exp-container {
+.exp-container {
   background: #34bb8b;
   padding: 26px;
   border-radius: 10px;
@@ -224,11 +224,11 @@
           align-items: center;
 }
 
-.exp .exp-content .exp-container .exp-image {
+.exp-image {
   margin-right: 25px;
 }
 
-.exp .exp-content .exp-container .exp-text {
+.exp-text {
   font-weight: 400;
   font-size: 26px;
   line-height: 32px;
@@ -239,51 +239,56 @@
   margin-top: 70px;
 }
 
-.about-certificate .about-certificate-content .about-certificate-text {
+.about-certificate-text {
   font-weight: 500;
   font-size: 35px;
   line-height: 45px;
   margin-bottom: 12px;
 }
 
-.about-certificate .about-certificate-content .about-certificate-container {
+.about-certificate-container {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
 }
 
-.about-certificate .about-certificate-content .about-certificate-container .about-certificate-point {
+.about-certificate-point {
   display: grid;
   grid-gap: 20px;
-  grid-template-columns: 260px 1fr;
+  grid-template-columns: 360px 1fr;
   border-bottom: 1px solid #edf1f4;
   padding: 20px 0;
 }
 
-.about-certificate .about-certificate-content .about-certificate-container .about-certificate-point:last-child {
+.about-certificate-point:last-child {
   border: none;
   padding-bottom: 0;
 }
 
-.about-certificate .about-certificate-content .about-certificate-container .about-certificate-point:first-child {
+.about-certificate-point:first-child {
   padding-top: 0;
 }
 
-.about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-image {
+.about-certificate-point-image-link {
+  display: block;
+  margin: auto;
+}
+
+.about-certificate-point-image {
   margin-right: 20px;
   max-width: 257px;
   max-height: 182px;
   margin: auto;
 }
 
-.about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-text .about-certificate-point-text-main {
+.about-certificate-point-text-main {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   margin-bottom: 7px;
 }
 
-.about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-text .about-certificate-point-text-second {
+.about-certificate-point-text-second {
   font-weight: 400;
   font-size: 15px;
   line-height: 21px;
@@ -293,33 +298,33 @@
   margin-top: 42px;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container {
+.list-certificate-container {
   padding: 20px;
   background-color: #fff;
   border-radius: 10px;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts {
+.list-certificate-texts {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 50px;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-main {
+.list-certificate-text-main {
   font-weight: 600;
   font-size: 18px;
   line-height: 24px;
   color: #3d3d3d;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-second {
+.list-certificate-text-second {
   font-weight: 400;
   font-size: 15px;
   color: #3d3d3d;
   line-height: 21px;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery {
+.list-certificate-gallery {
   margin-top: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -328,20 +333,20 @@
       flex-wrap: wrap;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery .list-certificate-gallery-link {
+.list-certificate-gallery-link {
   margin-right: 5px;
   margin-bottom: 10px;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery .list-certificate-gallery-link .list-certificate-gallery-link-image {
+.list-certificate-gallery-link-image {
   max-height: 215px;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container .swiper {
+.swiper {
   display: none;
 }
 
-.list-certificate .list-certificate-content .list-certificate-container .sw-nav {
+.sw-nav {
   display: none;
 }
 
@@ -350,7 +355,7 @@
     padding-top: 100px;
   }
 
-  .banner .banner-content {
+  .banner-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -360,46 +365,46 @@
             flex-direction: column;
   }
 
-  .banner .banner-content .banner-text-container {
+  .banner-text-container {
     margin-top: 0;
     width: 100%;
     margin-right: inherit;
   }
 
-  .banner .banner-content .banner-text-container .banner-text {
+  .banner-text {
     font-weight: 500;
     font-size: 48px;
     line-height: 48px;
     margin-bottom: 20px;
   }
 
-  .banner .banner-content .banner-text-container .banner-bg {
+  .banner-bg {
     display: none;
   }
 
-  .banner .banner-content .banner-text-container .banner-bg-vector {
+  .banner-bg-vector {
     display: none;
   }
 
-  .table .table-content .table-container .table-row-header .table-point-header {
+  .table-point-header {
     font-size: 16px;
     line-height: 24px;
   }
 
-  .table .table-content .table-container .table-row-header .table-point-header[data-type=year] {
+  .table-point-header[data-type=year] {
     max-width: 140px;
   }
 
-  .table .table-content .table-container .table-row-header .table-point-header[data-type=hours] {
+  .table-point-header[data-type=hours] {
     max-width: 160px;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=year] {
+  .table-point[data-type=year] {
     font-size: 15px;
     max-width: 140px;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=hours] {
+  .table-point[data-type=hours] {
     max-width: 160px;
   }
 
@@ -407,15 +412,15 @@
     margin-top: 30px;
   }
 
-  .exp .exp-content .exp-container {
+  .exp-container {
     padding: 20px;
   }
 
-  .exp .exp-content .exp-container .exp-image {
+  .exp-image {
     margin-right: 15px;
   }
 
-  .exp .exp-content .exp-container .exp-text {
+  .exp-text {
     font-weight: 400;
     font-size: 22px;
     line-height: 28px;
@@ -426,25 +431,25 @@
     margin-top: 30px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts {
+  .list-certificate-texts {
     grid-gap: 30px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-main {
+  .list-certificate-text-main {
     line-height: 22px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-second {
+  .list-certificate-text-second {
     line-height: 18px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery .list-certificate-gallery-link .list-certificate-gallery-link-image {
+  .list-certificate-gallery-link-image {
     max-height: 180px;
   }
 }
 
 @media screen and (max-width: 768px) {
-  .banner .banner-content {
+  .banner-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -454,19 +459,19 @@
             flex-direction: column;
   }
 
-  .banner .banner-content .banner-text-container {
+  .banner-text-container {
     width: 100%;
     margin-right: inherit;
   }
 
-  .banner .banner-content .banner-text-container .banner-text {
+  .banner-text {
     font-weight: 500;
     font-size: 28px;
     line-height: 32px;
     margin-bottom: 20px;
   }
 
-  .banner .banner-content .banner-text-container .banne-bg {
+  .banne-bg {
     display: none;
   }
 
@@ -474,17 +479,17 @@
     margin-top: 30px;
   }
 
-  .table .table-content .table-text {
+  .table-text {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 12px;
   }
 
-  .table .table-content .table-container .table-row-header {
+  .table-row-header {
     display: none;
   }
 
-  .table .table-content .table-container .table-row {
+  .table-row {
     margin: 0 15px;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -497,11 +502,11 @@
     padding: 10px 0;
   }
 
-  .table .table-content .table-container .table-row:last-child {
+  .table-row:last-child {
     border: none;
   }
 
-  .table .table-content .table-container .table-row .table-point {
+  .table-point {
     width: 100%;
     padding: 0;
     display: -webkit-box;
@@ -513,58 +518,58 @@
             flex-direction: column;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=year] {
+  .table-point[data-type=year] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=year] .table-point-main-text {
+  .table-point[data-type=year] .table-point-main-text {
     font-weight: 600;
     font-size: 14px;
     line-height: 26px;
     color: #3d3d3d;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=program] {
+  .table-point[data-type=program] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=people] {
+  .table-point[data-type=people] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=intensive] {
+  .table-point[data-type=intensive] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=work] {
+  .table-point[data-type=work] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=hours] {
+  .table-point[data-type=hours] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=workHours] {
+  .table-point[data-type=workHours] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=special] {
+  .table-point[data-type=special] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=university] {
+  .table-point[data-type=university] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=place] {
+  .table-point[data-type=place] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point[data-type=activity] {
+  .table-point[data-type=activity] {
     max-width: 100%;
   }
 
-  .table .table-content .table-container .table-row .table-point .table-point-second-text {
+  .table-point-second-text {
     line-height: 13px;
     font-weight: 600;
     font-size: 13px;
@@ -573,7 +578,7 @@
     margin-bottom: 1px;
   }
 
-  .table .table-content .table-container .table-row .table-point .table-point-main-text {
+  .table-point-main-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 20px;
@@ -585,7 +590,7 @@
     margin-top: 17px;
   }
 
-  .exp .exp-content .exp-container {
+  .exp-container {
     padding: 20px 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -593,12 +598,13 @@
             flex-direction: column;
   }
 
-  .exp .exp-content .exp-container .exp-image {
+  .exp-image {
     margin-right: 0px;
     margin-bottom: 10px;
+    width: 36px;
   }
 
-  .exp .exp-content .exp-container .exp-text {
+  .exp-text {
     text-align: center;
     font-weight: 400;
     font-size: 18px;
@@ -610,18 +616,18 @@
     margin-top: 40px;
   }
 
-  .about-certificate .about-certificate-content .about-certificate-text {
+  .about-certificate-text {
     font-weight: 500;
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 12px;
   }
 
-  .about-certificate .about-certificate-content .about-certificate-container {
+  .about-certificate-container {
     padding: 15px;
   }
 
-  .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point {
+  .about-certificate-point {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -632,7 +638,7 @@
     border: none;
   }
 
-  .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-image {
+  .about-certificate-point-image {
     max-height: 208px;
     max-width: inherit;
     width: -webkit-fit-content;
@@ -641,14 +647,14 @@
     margin: 0;
   }
 
-  .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-text .about-certificate-point-text-main {
+  .about-certificate-point-text-main {
     font-weight: 600;
     font-size: 16px;
     line-height: 21px;
     margin-bottom: 5px;
   }
 
-  .about-certificate .about-certificate-content .about-certificate-container .about-certificate-point .about-certificate-point-text .about-certificate-point-text-second {
+  .about-certificate-point-text-second {
     font-weight: 400;
     font-size: 14px;
     line-height: 19px;
@@ -658,42 +664,42 @@
     margin-top: 20px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container {
+  .list-certificate-container {
     padding: 20px 15px;
     padding-bottom: 0;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts {
+  .list-certificate-texts {
     grid-template-columns: 1fr;
     grid-gap: 10px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-main {
+  .list-certificate-text-main {
     font-size: 16px;
     line-height: 21px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-texts .list-certificate-text-container .list-certificate-text-second {
+  .list-certificate-text-second {
     font-size: 14px;
     line-height: 19px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .list-certificate-gallery {
+  .list-certificate-gallery {
     display: none;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .swiper {
+  .swiper {
     margin-top: 12px;
     display: block;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-link .swiper-slide-link-image {
+  .swiper-slide-link-image {
     max-height: 100px;
     margin: auto;
     display: block;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav {
+  .sw-nav {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -702,8 +708,8 @@
     display: flex;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev,
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next {
+  .sw-prev,
+  .sw-next {
     cursor: pointer;
     width: 33px;
     height: 33px;
@@ -724,43 +730,43 @@
     margin: 15px;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev:hover,
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next:hover {
+  .sw-prev:hover,
+  .sw-next:hover {
     background-color: #25d89a;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev.swiper-button-disabled,
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next.swiper-button-disabled {
+  .sw-prev.swiper-button-disabled,
+  .sw-next.swiper-button-disabled {
     cursor: auto;
     opacity: 0.5;
     background-color: #34bb8b;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev.swiper-button-disabled:hover,
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next.swiper-button-disabled:hover {
+  .sw-prev.swiper-button-disabled:hover,
+  .sw-next.swiper-button-disabled:hover {
     -webkit-box-shadow: none;
             box-shadow: none;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev.swiper-button-disabled:active,
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next.swiper-button-disabled:active {
+  .sw-prev.swiper-button-disabled:active,
+  .sw-next.swiper-button-disabled:active {
     background-color: #34bb8b;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev:active {
+  .sw-prev:active {
     background-color: #24916a;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-prev:hover {
+  .sw-prev:hover {
     -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
             box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next:active {
+  .sw-next:active {
     background-color: #24916a;
   }
 
-  .list-certificate .list-certificate-content .list-certificate-container .sw-nav .sw-next:hover {
+  .sw-next:hover {
     -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
             box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
   }

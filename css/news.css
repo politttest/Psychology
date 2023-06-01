@@ -2,18 +2,18 @@ body {
   margin-top: 120px;
 }
 
-.news .news-content {
+.news-content {
   max-width: 977px;
 }
 
-.news .news-content .news-text {
+.news-text {
   font-weight: 500;
   font-size: 30px;
   line-height: 38px;
   margin-bottom: 10px;
 }
 
-.news .news-content .news-date {
+.news-date {
   font-weight: 400;
   color: #3d3d3d;
   font-size: 18px;
@@ -27,12 +27,12 @@ body {
   margin-bottom: 12px;
 }
 
-.news .news-content .news-date .news-date-text {
+.news-date-text {
   padding-right: 11px;
   position: relative;
 }
 
-.news .news-content .news-date .news-date-text::after {
+.news-date-text::after {
   content: "";
   position: absolute;
   right: 0;
@@ -42,28 +42,28 @@ body {
   background-color: #d4d4d4;
 }
 
-.news .news-content .news-date .news-date-number {
+.news-date-number {
   margin-left: 11px;
 }
 
-.news .news-content .news-container .news-image-container {
+.news-image-container {
   border-radius: 10px;
   background-color: #fff;
   padding: 5px;
   margin-bottom: 20px;
 }
 
-.news .news-content .news-container .news-image-container .news-image {
+.news-image {
   width: 100%;
   display: block;
   border-radius: 10px;
 }
 
-.news .news-content .news-container .news-list-container {
+.news-list-container {
   margin-bottom: 40px;
 }
 
-.news .news-content .news-container .news-list-container .news-list-point {
+.news-list-point {
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
@@ -71,11 +71,11 @@ body {
   color: #3d3d3d;
 }
 
-.news .news-content .news-container .news-list-container .news-list-point:last-child {
+.news-list-point:last-child {
   margin-bottom: 0;
 }
 
-.news .news-content .news-container .news-buttons {
+.news-buttons {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -88,7 +88,7 @@ body {
           align-items: center;
 }
 
-.news .news-content .news-container .news-buttons .news-button {
+.news-button {
   color: #141414;
   background-color: #fff;
   border-radius: 2px;
@@ -106,7 +106,7 @@ body {
   width: 204px;
 }
 
-.news .news-content .news-container .news-buttons .news-button[data-type=prev] {
+.news-button[data-type=prev] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -115,13 +115,13 @@ body {
           align-items: center;
 }
 
-.news .news-content .news-container .news-buttons .news-button[data-type=prev]::before {
+.news-button[data-type=prev]::before {
   margin-top: 4px;
   content: url("../img/news_vector_1.svg");
   margin-right: 10px;
 }
 
-.news .news-content .news-container .news-buttons .news-button[data-type=next] {
+.news-button[data-type=next] {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -130,13 +130,13 @@ body {
           align-items: center;
 }
 
-.news .news-content .news-container .news-buttons .news-button[data-type=next]::after {
+.news-button[data-type=next]::after {
   margin-top: 4px;
   content: url("../img/news_vector_2.svg");
   margin-left: 10px;
 }
 
-.news .news-content .news-container .news-links-container {
+.news-links-container {
   margin-top: 18px;
   background-color: #fff;
   border-radius: 150px;
@@ -149,7 +149,7 @@ body {
   padding: 5px;
 }
 
-.news .news-content .news-container .news-links-container .news-link {
+.news-link {
   width: 45px;
   display: block;
   height: 45px;
@@ -167,11 +167,11 @@ body {
   margin-right: 5px;
 }
 
-.news .news-content .news-container .news-links-container .news-link:last-child {
+.news-link:last-child {
   margin-right: 0;
 }
 
-.news .news-content .news-container .news-links-container .news-link[data-type=share] {
+.news-link[data-type=share] {
   background-color: #3464af;
 }
 
@@ -179,20 +179,20 @@ body {
   margin-top: 60px;
 }
 
-.comment .comment-content .comment-container {
+.comment-container {
   padding: 30px 40px;
   background-color: #fff;
   border-radius: 10px;
 }
 
-.comment .comment-content .comment-container .comment-text {
+.comment-text {
   font-weight: 500;
   font-size: 35px;
   line-height: 55px;
   margin-bottom: 20px;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container {
+.comment-form-inputs-name-email-container {
   max-width: 700px;
   width: 100%;
   display: grid;
@@ -201,7 +201,7 @@ body {
   margin-bottom: 25px;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container .comment-form-inputs-name-email {
+.comment-form-inputs-name-email {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -211,7 +211,7 @@ body {
           flex-direction: column;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container .comment-form-inputs-name-email .comment-form-inputs-name-email-text {
+.comment-form-inputs-name-email-text {
   margin-bottom: 5px;
   font-weight: 400;
   font-size: 16px;
@@ -219,34 +219,34 @@ body {
   color: #141414;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container .comment-form-inputs-name-email .comment-form-inputs-name-email-input {
+.comment-form-inputs-name-email-input {
   height: 45px;
   padding: 10px 15px;
   border: 1px solid #ebebeb;
   border-radius: 3px;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container .comment-form-inputs-name-email .comment-form-inputs-name-email-input::-webkit-input-placeholder {
+.comment-form-inputs-name-email-input::-webkit-input-placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container .comment-form-inputs-name-email .comment-form-inputs-name-email-input::-moz-placeholder {
+.comment-form-inputs-name-email-input::-moz-placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container .comment-form-inputs-name-email .comment-form-inputs-name-email-input:-ms-input-placeholder {
+.comment-form-inputs-name-email-input:-ms-input-placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container .comment-form-inputs-name-email .comment-form-inputs-name-email-input::-ms-input-placeholder {
+.comment-form-inputs-name-email-input::-ms-input-placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container .comment-form-inputs-name-email .comment-form-inputs-name-email-input::placeholder {
+.comment-form-inputs-name-email-input::placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container {
+.comment-form-inputs-question-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,7 +256,7 @@ body {
           flex-direction: column;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-text {
+.comment-form-inputs-question-text {
   margin-bottom: 5px;
   font-weight: 400;
   font-size: 16px;
@@ -264,7 +264,7 @@ body {
   color: #141414;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-input {
+.comment-form-inputs-question-input {
   resize: none;
   height: 105px;
   padding: 10px 15px;
@@ -272,27 +272,27 @@ body {
   border-radius: 3px;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-input::-webkit-input-placeholder {
+.comment-form-inputs-question-input::-webkit-input-placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-input::-moz-placeholder {
+.comment-form-inputs-question-input::-moz-placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-input:-ms-input-placeholder {
+.comment-form-inputs-question-input:-ms-input-placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-input::-ms-input-placeholder {
+.comment-form-inputs-question-input::-ms-input-placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-input::placeholder {
+.comment-form-inputs-question-input::placeholder {
   color: rgba(201, 201, 201, 0.9);
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-button {
+.comment-form-button {
   color: #fff;
   position: relative;
   font-weight: 600;
@@ -320,11 +320,11 @@ body {
   cursor: pointer;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-button:hover {
-  background-color: #24906A;
+.comment-form-button:hover {
+  background-color: #24906a;
 }
 
-.comment .comment-content .comment-container .comment-form-inputs .comment-form-button:active {
+.comment-form-button:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
@@ -334,42 +334,42 @@ body {
     margin-top: 95px;
   }
 
-  .news .news-content .news-text {
+  .news-text {
     font-size: 22px;
     line-height: 26px;
     margin-bottom: 8px;
   }
 
-  .news .news-content .news-date {
+  .news-date {
     font-size: 13px;
     line-height: 26px;
     margin-bottom: 7px;
   }
 
-  .news .news-content .news-container .news-image-container {
+  .news-image-container {
     border-radius: 8px;
     padding: 2px;
     margin-bottom: 10px;
   }
 
-  .news .news-content .news-container .news-image-container .news-image {
+  .news-image {
     border-radius: 8px;
   }
 
-  .news .news-content .news-container .news-list-container {
+  .news-list-container {
     margin-bottom: 15px;
   }
 
-  .news .news-content .news-container .news-list-container .news-list-point {
+  .news-list-point {
     font-size: 14px;
     line-height: 21px;
   }
 
-  .news .news-content .news-container .news-buttons {
+  .news-buttons {
     width: inherit;
   }
 
-  .news .news-content .news-container .news-buttons .news-button {
+  .news-button {
     background-color: inherit;
     height: inherit;
     width: inherit;
@@ -384,13 +384,13 @@ body {
     border-bottom: 1px solid #3d3d3d;
   }
 
-  .news .news-content .news-container .news-buttons .news-button[data-type=prev]::before {
+  .news-button[data-type=prev]::before {
     margin-top: 4px;
     content: url("../img/news_vector_1.svg");
     margin-right: 7px;
   }
 
-  .news .news-content .news-container .news-buttons .news-button[data-type=next]::after {
+  .news-button[data-type=next]::after {
     margin-top: 4px;
     content: url("../img/news_vector_2.svg");
     margin-left: 7px;
@@ -400,29 +400,29 @@ body {
     margin-top: 40px;
   }
 
-  .comment .comment-content .comment-container {
+  .comment-container {
     padding: 17px;
     padding-top: 22px;
   }
 
-  .comment .comment-content .comment-container .comment-text {
+  .comment-text {
     text-align: center;
     font-size: 28px;
     line-height: 30px;
     margin-bottom: 13px;
   }
 
-  .comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-name-email-container {
+  .comment-form-inputs-name-email-container {
     grid-template-columns: 1fr;
     grid-gap: 15px;
     margin-bottom: 15px;
   }
 
-  .comment .comment-content .comment-container .comment-form-inputs .comment-form-inputs-question-container .comment-form-inputs-question-input {
+  .comment-form-inputs-question-input {
     height: 188px;
   }
 
-  .comment .comment-content .comment-container .comment-form-inputs .comment-form-button {
+  .comment-form-button {
     margin-top: 15px;
   }
 }

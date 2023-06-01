@@ -1,15 +1,15 @@
-.banner {
+.banner-index {
   padding-top: 130px;
 }
 
-.banner .banner-content {
+.banner-index-content {
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.banner .banner-content .banner-circle {
+.banner-index-circle {
   position: absolute;
   top: -16px;
   left: -10px;
@@ -20,18 +20,18 @@
   z-index: -1;
 }
 
-.banner .banner-content .banner-text-container {
+.banner-index-text-container {
   margin-right: -200px;
 }
 
-.banner .banner-content .banner-text-container .banner-text-main {
+.banner-index-text-main {
   font-size: 80px;
   line-height: 70px;
   font-weight: 500;
   margin-bottom: 20px;
 }
 
-.banner .banner-content .banner-text-container .banner-text-second {
+.banner-index-text-second {
   font-weight: 400;
   font-size: 18px;
   max-width: 480px;
@@ -39,7 +39,7 @@
   margin-bottom: 20px;
 }
 
-.banner .banner-content .banner-text-container .banner-text-button {
+.banner-index-text-button {
   background-color: #34bb8b;
   border-radius: 5px;
   font-weight: 500;
@@ -63,22 +63,22 @@
   transition: all 0.2s ease;
 }
 
-.banner .banner-content .banner-text-container .banner-text-button:active {
+.banner-index-text-button:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
-.banner .banner-content .banner-text-container .banner-text-button:hover {
+.banner-index-text-button:hover {
   background-color: #24916a;
 }
 
-.banner .banner-content .banner-bg {
+.banner-index-bg {
   position: relative;
   z-index: -1;
   margin-top: 73px;
 }
 
-.banner .banner-content .banner-bg .banner-bg-image {
+.banner-index-bg-image {
   width: 685px;
   height: 463px;
   display: block;
@@ -89,7 +89,7 @@
   margin-bottom: 80px;
 }
 
-.services .services-content .services-text {
+.services-text {
   display: block;
   font-size: 55px;
   font-weight: 500;
@@ -98,13 +98,13 @@
   margin-bottom: 20px;
 }
 
-.services .services-content .services-cards-container {
+.services-cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
-.services .services-content .services-card {
+.services-card {
   background-color: #fff;
   border-radius: 10px;
   padding: 20px;
@@ -115,7 +115,61 @@
           flex-direction: column;
 }
 
-.services .services-content .services-card .services-card-image-container {
+.services-card[data-type=black] {
+  background-color: #343c45;
+}
+
+.services-card[data-type=black] .services-card-button {
+  background-color: #fff;
+}
+
+.services-card[data-type=black] .services-card-button:active {
+  background-color: #34bb8b;
+  -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+          box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+}
+
+.services-card[data-type=black] .services-card-button:hover {
+  background-color: #34bb8b;
+}
+
+.services-card[data-type=black] .services-card-button:hover .services-card-button-image path {
+  stroke: #fff;
+}
+
+.services-card[data-type=black] .services-card-main-text,
+.services-card[data-type=black] .services-card-second-text {
+  color: #fff;
+}
+
+.services-card[data-type=blue] {
+  background-color: #3464af;
+}
+
+.services-card[data-type=blue] .services-card-button {
+  background-color: #fff;
+}
+
+.services-card[data-type=blue] .services-card-button:active {
+  background-color: #34bb8b;
+  -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+          box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
+}
+
+.services-card[data-type=blue] .services-card-button:hover {
+  background-color: #34bb8b;
+}
+
+.services-card[data-type=blue] .services-card-button:hover .services-card-button-image path {
+  stroke: #fff;
+}
+
+.services-card[data-type=blue] .services-card-main-text,
+.services-card[data-type=blue] .services-card-second-text {
+  color: #fff;
+}
+
+.services-card-image-container {
   background-color: #f4f4f4;
   border-radius: 5px;
   width: 50px;
@@ -133,7 +187,7 @@
   margin-bottom: 13px;
 }
 
-.services .services-content .services-card .services-card-text {
+.services-card-text {
   height: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -144,20 +198,20 @@
           flex-direction: column;
 }
 
-.services .services-content .services-card .services-card-text .services-card-main-text {
+.services-card-main-text {
   font-size: 20px;
   font-weight: 500;
   margin-bottom: 10px;
   line-height: 24px;
 }
 
-.services .services-content .services-card .services-card-text .services-card-second-text {
+.services-card-second-text {
   font-size: 16px;
   font-weight: 400;
   line-height: 22px;
 }
 
-.services .services-content .services-card .services-card-text .services-card-button {
+.services-card-button {
   background-color: #34bb8b;
   width: 43px;
   height: 43px;
@@ -181,88 +235,26 @@
   transition: all 0.2s ease;
 }
 
-.services .services-content .services-card .services-card-text .services-card-button:active {
+.services-card-button:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
-.services .services-content .services-card .services-card-text .services-card-button:hover {
+.services-card-button:hover {
   background-color: #24916a;
-}
-
-.services .services-content .services-card[data-type=black] {
-  background-color: #343c45;
-}
-
-.services .services-content .services-card[data-type=black] .services-card-image-container,
-.services .services-content .services-card[data-type=black] .services-card-button {
-  background-color: #fff;
-}
-
-.services .services-content .services-card[data-type=black] .services-card-image-container:active,
-.services .services-content .services-card[data-type=black] .services-card-button:active {
-  background-color: #34bb8b;
-  -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
-          box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
-}
-
-.services .services-content .services-card[data-type=black] .services-card-image-container:active .services-card-button-image path,
-.services .services-content .services-card[data-type=black] .services-card-button:active .services-card-button-image path {
-  stroke: #fff;
-}
-
-.services .services-content .services-card[data-type=black] .services-card-image-container:hover,
-.services .services-content .services-card[data-type=black] .services-card-button:hover {
-  background-color: #34bb8b;
-}
-
-.services .services-content .services-card[data-type=black] .services-card-main-text,
-.services .services-content .services-card[data-type=black] .services-card-second-text {
-  color: #fff;
-}
-
-.services .services-content .services-card[data-type=blue] {
-  background-color: #3464af;
-}
-
-.services .services-content .services-card[data-type=blue] .services-card-image-container,
-.services .services-content .services-card[data-type=blue] .services-card-button {
-  background-color: #fff;
-}
-
-.services .services-content .services-card[data-type=blue] .services-card-image-container:active,
-.services .services-content .services-card[data-type=blue] .services-card-button:active {
-  background-color: #34bb8b;
-  -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
-          box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
-}
-
-.services .services-content .services-card[data-type=blue] .services-card-image-container:active .services-card-button-image path,
-.services .services-content .services-card[data-type=blue] .services-card-button:active .services-card-button-image path {
-  stroke: #fff;
-}
-
-.services .services-content .services-card[data-type=blue] .services-card-image-container:hover,
-.services .services-content .services-card[data-type=blue] .services-card-button:hover {
-  background-color: #34bb8b;
-}
-
-.services .services-content .services-card[data-type=blue] .services-card-main-text,
-.services .services-content .services-card[data-type=blue] .services-card-second-text {
-  color: #fff;
 }
 
 .benefits {
   margin-bottom: 70px;
 }
 
-.benefits .benefits-content .benefits-container {
+.benefits-container {
   background-color: #fff;
   border-radius: 10px;
   padding: 30px 50px;
 }
 
-.benefits .benefits-content .benefits-container .benefits-text {
+.benefits-text {
   font-weight: 500;
   font-size: 40px;
   color: #141414;
@@ -270,13 +262,13 @@
   margin-bottom: 13px;
 }
 
-.benefits .benefits-content .benefits-container .benefits-list {
+.benefits-list {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 30px;
 }
 
-.benefits .benefits-content .benefits-container .benefits-list .benefits-list-point {
+.benefits-list-point {
   display: grid;
   grid-template-columns: 115px 1fr;
   -webkit-box-align: center;
@@ -285,7 +277,7 @@
   grid-gap: 20px;
 }
 
-.benefits .benefits-content .benefits-container .benefits-list .benefits-list-point .benefits-list-point-image-container {
+.benefits-list-point-image-container {
   background-color: #f4f4f4;
   border-radius: 50%;
   width: 115px;
@@ -303,12 +295,12 @@
   overflow: hidden;
 }
 
-.benefits .benefits-content .benefits-container .benefits-list .benefits-list-point .benefits-list-point-image-container .benefits-list-point-image {
+.benefits-list-point-image {
   width: 100%;
   height: 100%;
 }
 
-.benefits .benefits-content .benefits-container .benefits-list .benefits-list-point .benefits-list-point-text {
+.benefits-list-point-text {
   line-height: 22px;
   max-width: 370px;
   font-size: 16px;
@@ -319,25 +311,50 @@
   margin-bottom: 60px;
 }
 
-.symptoms .symptoms-content .symptoms-text {
+.symptoms-text {
   font-weight: 500;
   font-size: 40px;
   line-height: 55px;
   margin-bottom: 22px;
 }
 
-.symptoms .symptoms-content .symptoms-cards-container {
+.symptoms-cards-container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
 
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card {
+.symptoms-card {
   border-radius: 10px;
   background-color: #fff;
 }
 
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-image-container {
+.symptoms-card[data-type=black] .symptoms-card-image-container {
+  background-color: #343c45;
+}
+
+.symptoms-card[data-type=black] .symptoms-card-list {
+  padding: 0 20px;
+}
+
+.symptoms-card[data-type=black] .symptoms-card-list .symptoms-card-list-point::before {
+  background-color: #141414;
+}
+
+.symptoms-card[data-type=blue] .symptoms-card-image-container {
+  background-color: #3464af;
+}
+
+.symptoms-card[data-type=blue] .symptoms-card-list {
+  padding: 0 20px;
+}
+
+.symptoms-card[data-type=blue] .symptoms-card-list .symptoms-card-list-point::before {
+  background-color: #fff;
+  border-color: #3464af;
+}
+
+.symptoms-card-image-container {
   width: 105px;
   height: 105px;
   background-color: #f4f4f4;
@@ -354,7 +371,7 @@
           align-items: center;
 }
 
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-text {
+.symptoms-card-text {
   text-align: center;
   font-size: 24px;
   font-weight: 600;
@@ -362,11 +379,11 @@
   margin-bottom: 13px;
 }
 
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-list {
+.symptoms-card-list {
   padding: 0 20px;
 }
 
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-list .symptoms-card-list-point {
+.symptoms-card-list-point {
   margin-bottom: 20px;
   padding-left: 30px;
   position: relative;
@@ -374,7 +391,7 @@
   line-height: 22px;
 }
 
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-list .symptoms-card-list-point::before {
+.symptoms-card-list-point::before {
   position: absolute;
   top: 2px;
   left: 0;
@@ -386,52 +403,27 @@
   content: "";
 }
 
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card[data-type=black] .symptoms-card-image-container {
-  background-color: #343c45;
-}
-
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card[data-type=black] .symptoms-card-list {
-  padding: 0 20px;
-}
-
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card[data-type=black] .symptoms-card-list .symptoms-card-list-point::before {
-  background-color: #141414;
-}
-
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card[data-type=blue] .symptoms-card-image-container {
-  background-color: #3464af;
-}
-
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card[data-type=blue] .symptoms-card-list {
-  padding: 0 20px;
-}
-
-.symptoms .symptoms-content .symptoms-cards-container .symptoms-card[data-type=blue] .symptoms-card-list .symptoms-card-list-point::before {
-  background-color: #fff;
-  border-color: #3464af;
-}
-
 .who {
   margin-bottom: 60px;
 }
 
-.who .who-content {
+.who-content {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.who .who-content .who-left-part {
+.who-left-part {
   margin-right: 75px;
 }
 
-.who .who-content .who-left-part .who-left-part-text {
+.who-left-part-text {
   font-size: 40px;
   font-weight: 500;
   line-height: 55px;
 }
 
-.who .who-content .who-left-part .who-left-part-second-text {
+.who-left-part-second-text {
   margin: 25px 0;
   max-width: 450px;
   font-size: 20px;
@@ -440,7 +432,7 @@
   margin-top: 9px;
 }
 
-.who .who-content .who-left-part .who-left-part-list .who-left-part-list-point {
+.who-left-part-list-point {
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -453,7 +445,7 @@
   border-radius: 10px;
 }
 
-.who .who-content .who-left-part .who-left-part-list .who-left-part-list-point .who-left-part-list-point-image-container {
+.who-left-part-list-point-image-container {
   width: 50px;
   height: 50px;
   background-color: #edf1f4;
@@ -470,14 +462,14 @@
   margin-right: 10px;
 }
 
-.who .who-content .who-left-part .who-left-part-list .who-left-part-list-point .who-left-part-list-point-text {
+.who-left-part-list-point-text {
   font-weight: 400;
   font-size: 18px;
   line-height: 24px;
   width: 100%;
 }
 
-.who .who-content .who-left-part .who-left-part-biography {
+.who-left-part-biography {
   margin-top: 30px;
   background: #343c45;
   border-radius: 10px;
@@ -485,12 +477,12 @@
   position: relative;
 }
 
-.who .who-content .who-left-part .who-left-part-biography .who-left-part-biography-bg {
+.who-left-part-biography-bg {
   position: absolute;
   z-index: 1;
 }
 
-.who .who-content .who-left-part .who-left-part-biography .who-left-part-biography-text {
+.who-left-part-biography-text {
   font-size: 18px;
   line-height: 26px;
   font-weight: 500;
@@ -501,11 +493,11 @@
   z-index: 2;
 }
 
-.who .who-content .who-left-part .who-left-part-biography .who-left-part-biography-text:last-child {
+.who-left-part-biography-text:last-child {
   margin-bottom: 0;
 }
 
-.who .who-content .who-left-part .who-left-part-biography .who-left-part-biography-text .who-left-part-biography-text-link {
+.who-left-part-biography-text-link {
   color: #fff;
   -webkit-text-decoration: solid 1px;
           text-decoration: solid 1px;
@@ -514,12 +506,12 @@
   cursor: pointer;
 }
 
-.who .who-content .who-right-part {
+.who-right-part {
   margin-top: 40px;
   margin-right: 40px;
 }
 
-.who .who-content .who-right-part .who-right-part-image-container {
+.who-right-part-image-container {
   background-color: #ffffff;
   border-radius: 10px;
   padding: 5px;
@@ -527,7 +519,7 @@
           box-shadow: 0px 4px 14px rgba(29, 29, 29, 0.15);
 }
 
-.who .who-content .who-right-part .who-right-part-image-container .who-right-part-image {
+.who-right-part-image {
   border-radius: 10px;
 }
 
@@ -535,21 +527,21 @@
   margin-bottom: 70px;
 }
 
-.expectations .expectations-content .expectations-text {
+.expectations-text {
   font-weight: 500;
   font-size: 40px;
   margin-bottom: 20px;
   line-height: 55px;
 }
 
-.expectations .expectations-content .expectations-list {
+.expectations-list {
   display: grid;
   grid-gap: 20px;
   grid-template-columns: 1fr 1fr 1fr;
   margin-bottom: 30px;
 }
 
-.expectations .expectations-content .expectations-list .expectations-list-point {
+.expectations-list-point {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -558,26 +550,26 @@
   border-radius: 10px;
 }
 
-.expectations .expectations-content .expectations-list .expectations-list-point .expectations-list-point-image {
+.expectations-list-point-image {
   margin-right: 15px;
   width: 16px;
   height: 16px;
 }
 
-.expectations .expectations-content .expectations-list .expectations-list-point .expectations-list-point-text {
+.expectations-list-point-text {
   color: #fff;
   font-size: 16px;
   line-height: 22px;
 }
 
-.expectations .expectations-content .expectations-table {
+.expectations-table {
   border-radius: 10px;
   padding: 20px;
   background-color: #fff;
   counter-reset: listExpectationsNumbers;
 }
 
-.expectations .expectations-content .expectations-table .expectations-row {
+.expectations-row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -587,16 +579,16 @@
   counter-increment: listExpectationsNumbers;
 }
 
-.expectations .expectations-content .expectations-table .expectations-row:first-child {
+.expectations-row:first-child {
   padding-top: 6px;
 }
 
-.expectations .expectations-content .expectations-table .expectations-row:last-child {
+.expectations-row:last-child {
   border-bottom: none;
   padding-bottom: 10px;
 }
 
-.expectations .expectations-content .expectations-table .expectations-row::before {
+.expectations-row::before {
   color: #3464af;
   font-weight: 700;
   font-size: 18px;
@@ -607,7 +599,7 @@
   content: "0" counter(listExpectationsNumbers);
 }
 
-.expectations .expectations-content .expectations-table .expectations-row .expectations-row-main-text {
+.expectations-row-main-text {
   color: #3d3d3d;
   font-size: 20px;
   font-weight: 600;
@@ -617,7 +609,7 @@
   width: 100%;
 }
 
-.expectations .expectations-content .expectations-table .expectations-row .expectations-row-second-text {
+.expectations-row-second-text {
   font-size: 16px;
   font-weight: 400;
   color: #3d3d3d;
@@ -628,33 +620,33 @@
   margin-bottom: 70px;
 }
 
-.certificate .certificate-content {
+.certificate-content {
   position: relative;
 }
 
-.certificate .certificate-content .certificate-text {
+.certificate-text {
   font-size: 40px;
   font-weight: 500;
   margin-bottom: 30px;
 }
 
-.certificate .certificate-content .swiper {
+.swiper {
   position: relative;
 }
 
-.certificate .certificate-content .swiper .swiper-container {
+.swiper-container {
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
 }
 
-.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide {
+.swiper-slide {
   padding-right: 20px;
   position: relative;
 }
 
-.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container {
+.swiper-slide-container {
   text-align: center;
   font-size: 18px;
   background: #fff;
@@ -674,7 +666,7 @@
   position: relative;
 }
 
-.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image {
+.swiper-slide-image {
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
@@ -682,7 +674,7 @@
   border-radius: 5px;
 }
 
-.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image-more-container {
+.swiper-slide-image-more-container {
   position: absolute;
   bottom: 18px;
   right: 18px;
@@ -705,23 +697,23 @@
   transition: all 0.2s ease;
 }
 
-.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image-more-container:active {
+.swiper-slide-image-more-container:active {
   -webkit-box-shadow: 0px 7px 15px rgba(52, 100, 175, 0.7);
           box-shadow: 0px 7px 15px rgba(52, 100, 175, 0.7);
 }
 
-.certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image-more-container:hover {
+.swiper-slide-image-more-container:hover {
   background-color: #174793;
 }
 
-.certificate .certificate-content .sw-nav {
+.sw-nav {
   position: absolute;
   top: 0;
   width: 100%;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev,
-.certificate .certificate-content .sw-nav .sw-next {
+.sw-prev,
+.sw-next {
   cursor: pointer;
   width: 43px;
   height: 43px;
@@ -741,55 +733,55 @@
   transition: all 0.2s ease;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev:active,
-.certificate .certificate-content .sw-nav .sw-next:active {
+.sw-prev:active,
+.sw-next:active {
   background-color: #25d89a;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev.swiper-button-disabled,
-.certificate .certificate-content .sw-nav .sw-next.swiper-button-disabled {
+.sw-prev.swiper-button-disabled,
+.sw-next.swiper-button-disabled {
   cursor: auto;
   opacity: 0.5;
   background-color: #34bb8b;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev.swiper-button-disabled:active,
-.certificate .certificate-content .sw-nav .sw-next.swiper-button-disabled:active {
+.sw-prev.swiper-button-disabled:active,
+.sw-next.swiper-button-disabled:active {
   -webkit-box-shadow: none;
           box-shadow: none;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev.swiper-button-disabled:hover,
-.certificate .certificate-content .sw-nav .sw-next.swiper-button-disabled:hover {
+.sw-prev.swiper-button-disabled:hover,
+.sw-next.swiper-button-disabled:hover {
   background-color: #34bb8b;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev {
+.sw-prev {
   position: absolute;
   top: 160px;
   left: -70px;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev:hover {
+.sw-prev:hover {
   background-color: #24916a;
 }
 
-.certificate .certificate-content .sw-nav .sw-prev:active {
+.sw-prev:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
 
-.certificate .certificate-content .sw-nav .sw-next {
+.sw-next {
   top: 160px;
   right: -10px;
   position: absolute;
 }
 
-.certificate .certificate-content .sw-nav .sw-next:hover {
+.sw-next:hover {
   background-color: #24916a;
 }
 
-.certificate .certificate-content .sw-nav .sw-next:active {
+.sw-next:active {
   -webkit-box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
           box-shadow: 0px 7px 25px rgba(40, 166, 121, 0.6);
 }
@@ -798,11 +790,11 @@
   margin-bottom: 20px;
 }
 
-.question-answer .question-answer-content {
+.question-answer-content {
   max-width: 992px;
 }
 
-.question-answer .question-answer-content .question-answer-text {
+.question-answer-text {
   text-align: center;
   font-weight: 500;
   font-size: 40px;
@@ -810,11 +802,11 @@
   margin-bottom: 38px;
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point {
+.question-answer-list-point {
   border-bottom: 1px solid #d7d7d7;
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container {
+.question-answer-list-point-main-text-container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,13 +820,13 @@
   cursor: pointer;
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container .question-answer-list-point-main-text {
+.question-answer-list-point-main-text {
   font-weight: 500;
   font-size: 18px;
   line-height: 24px;
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container .question-answer-list-point-main-button {
+.question-answer-list-point-main-button {
   position: relative;
   width: 32px;
   height: 32px;
@@ -849,7 +841,7 @@
           align-items: center;
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container .question-answer-list-point-main-button .question-answer-list-point-main-button-span {
+.question-answer-list-point-main-button-span {
   width: 21px;
   height: 2.5px;
   background-color: #34bb8b;
@@ -860,27 +852,27 @@
   transition: all 0.2s ease;
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container .question-answer-list-point-main-button .question-answer-list-point-main-button-span:last-child {
+.question-answer-list-point-main-button-span:last-child {
   position: absolute;
   -webkit-transform: rotate(90deg);
       -ms-transform: rotate(90deg);
           transform: rotate(90deg);
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container .question-answer-list-point-main-button .question-answer-list-point-main-button-span:last-child.active {
+.question-answer-list-point-main-button-span:last-child.active {
   -webkit-transform: rotate(0deg);
       -ms-transform: rotate(0deg);
           transform: rotate(0deg);
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-second-text-container {
+.question-answer-list-point-second-text-container {
   overflow: hidden;
   -webkit-transition: all 0.2s ease;
   -o-transition: all 0.2s ease;
   transition: all 0.2s ease;
 }
 
-.question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-second-text-container .question-answer-list-point-second-text {
+.question-answer-list-point-second-text {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 30px;
@@ -891,33 +883,33 @@
 }
 
 @media screen and (max-width: 1100px) {
-  .banner {
+  .banner-index {
     padding-top: 100px;
   }
 
-  .banner .banner-content .banner-circle {
+  .banner-index-circle {
     top: -14px;
     left: 6px;
     width: 48px;
     height: 48px;
   }
 
-  .banner .banner-content .banner-text-container {
+  .banner-index-text-container {
     margin-right: -150px;
   }
 
-  .banner .banner-content .banner-text-container .banner-text-main {
+  .banner-index-text-main {
     font-size: 56px;
     margin-bottom: 18px;
   }
 
-  .banner .banner-content .banner-text-container .banner-text-second {
+  .banner-index-text-second {
     font-size: 16px;
     max-width: 480px;
     margin-bottom: 18px;
   }
 
-  .banner .banner-content .banner-text-container .banner-text-button {
+  .banner-index-text-button {
     font-size: 18px;
     width: 330px;
   }
@@ -926,34 +918,34 @@
     margin-bottom: 60px;
   }
 
-  .services .services-content .services-text {
+  .services-text {
     font-size: 42px;
   }
 
-  .services .services-content .services-cards-container {
+  .services-cards-container {
     grid-template-columns: 1fr 1fr;
   }
 
-  .services .services-content .services-cards-container .services-card {
+  .services-card {
     display: grid;
     grid-template-columns: 50px 1fr;
     grid-gap: 20px;
   }
 
-  .services .services-content .services-cards-container .services-card .services-card-image-container {
+  .services-card-image-container {
     width: 50px;
     height: 50px;
     padding: 5px;
   }
 
-  .services .services-content .services-cards-container .services-card .services-card-text .services-card-main-text {
+  .services-card-main-text {
     font-size: 18px;
     font-weight: 600;
     margin-bottom: 10px;
     line-height: 22px;
   }
 
-  .services .services-content .services-cards-container .services-card .services-card-text .services-card-second-text {
+  .services-card-second-text {
     font-size: 14px;
     line-height: 22px;
   }
@@ -962,25 +954,25 @@
     margin-bottom: 50px;
   }
 
-  .benefits .benefits-content .benefits-container {
+  .benefits-container {
     padding: 20px 40px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-text {
+  .benefits-text {
     font-size: 36px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-list {
+  .benefits-list {
     grid-template-columns: 1fr;
     grid-gap: 25px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-list .benefits-list-point {
+  .benefits-list-point {
     grid-template-columns: 80px 1fr;
     grid-gap: 15px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-list .benefits-list-point .benefits-list-point-image-container {
+  .benefits-list-point-image-container {
     width: 80px;
     height: 80px;
   }
@@ -989,28 +981,28 @@
     margin-bottom: 45px;
   }
 
-  .symptoms .symptoms-content .symptoms-text {
+  .symptoms-text {
     font-size: 30px;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container {
+  .symptoms-cards-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-image-container {
+  .symptoms-card-image-container {
     width: 85px;
     height: 85px;
     margin: 20px auto;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-text {
+  .symptoms-card-text {
     font-size: 20px;
     margin-bottom: 10px;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-list {
+  .symptoms-card-list {
     padding: 0 20px;
   }
 
@@ -1022,29 +1014,29 @@
     margin-bottom: 50px;
   }
 
-  .expectations .expectations-content .expectations-text {
+  .expectations-text {
     font-size: 34px;
   }
 
-  .expectations .expectations-content .expectations-list {
+  .expectations-list {
     grid-gap: 15px;
     grid-template-columns: 1fr;
   }
 
-  .expectations .expectations-content .expectations-list .expectations-list-point {
+  .expectations-list-point {
     padding: 12px;
     border-radius: 5px;
   }
 
-  .expectations .expectations-content .expectations-list .expectations-list-point .expectations-list-point-image {
+  .expectations-list-point-image {
     margin-right: 10px;
   }
 
-  .expectations .expectations-content .expectations-table {
+  .expectations-table {
     padding: 12px;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row {
+  .expectations-row {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -1053,27 +1045,27 @@
     padding-top: 8px;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row:first-child {
+  .expectations-row:first-child {
     padding-top: 0;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row:last-child {
+  .expectations-row:last-child {
     border-bottom: none;
     padding-bottom: 10px;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row::before {
+  .expectations-row::before {
     font-size: 16px;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row .expectations-row-main-text {
+  .expectations-row-main-text {
     font-size: 18px;
     line-height: 21px;
     margin-right: 0;
     max-width: none;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row .expectations-row-second-text {
+  .expectations-row-second-text {
     font-size: 16px;
     line-height: 20px;
   }
@@ -1082,33 +1074,33 @@
     margin-bottom: 70px;
   }
 
-  .certificate .certificate-content {
+  .certificate-content {
     position: relative;
   }
 
-  .certificate .certificate-content .certificate-text {
+  .certificate-text {
     font-size: 32px;
     margin-bottom: 20px;
   }
 
-  .certificate .certificate-content .swiper {
+  .swiper {
     position: relative;
   }
 
-  .certificate .certificate-content .swiper .swiper-container {
+  .swiper-container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide {
+  .swiper-slide {
     padding-right: 20px;
     width: 300px;
     position: relative;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container {
+  .swiper-slide-container {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -1127,13 +1119,13 @@
     padding: 8px;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image {
+  .swiper-slide-image {
     width: 100%;
     height: 100%;
     border-radius: 5px;
   }
 
-  .certificate .certificate-content .sw-nav {
+  .sw-nav {
     position: relative;
     top: inherit;
     display: -webkit-box;
@@ -1145,14 +1137,14 @@
     margin-top: 20px;
   }
 
-  .certificate .certificate-content .sw-nav .sw-prev {
+  .sw-prev {
     position: relative;
     top: inherit;
     left: inherit;
     margin-right: 200px;
   }
 
-  .certificate .certificate-content .sw-nav .sw-next {
+  .sw-next {
     top: inherit;
     right: inherit;
     position: relative;
@@ -1162,30 +1154,30 @@
     margin-bottom: 0px;
   }
 
-  .question-answer .question-answer-content {
+  .question-answer-content {
     max-width: 800px;
   }
 
-  .question-answer .question-answer-content .question-answer-text {
+  .question-answer-text {
     font-size: 34px;
     margin-bottom: 24px;
   }
 
-  .question-answer .question-answer-content .question-answer-list .question-answer-list-point {
+  .question-answer-list-point {
     padding: 20px 0;
   }
 
-  .question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container .question-answer-list-point-main-text {
+  .question-answer-list-point-main-text {
     margin-right: 30px;
   }
 }
 
 @media screen and (max-width: 992px) {
-  .banner {
+  .banner-index {
     padding-top: 100px;
   }
 
-  .banner .banner-content {
+  .banner-index-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1195,34 +1187,34 @@
             flex-direction: column;
   }
 
-  .banner .banner-content .banner-circle {
+  .banner-index-circle {
     top: -8px;
     left: 4px;
     width: 37px;
     height: 37px;
   }
 
-  .banner .banner-content .banner-text-container {
+  .banner-index-text-container {
     margin-right: 0;
   }
 
-  .banner .banner-content .banner-text-container .banner-text-main {
+  .banner-index-text-main {
     font-size: 36px;
     margin-bottom: 0px;
     line-height: 48px;
   }
 
-  .banner .banner-content .banner-text-container .banner-text-second {
+  .banner-index-text-second {
     font-size: 15px;
     max-width: 480px;
     margin-bottom: 16px;
   }
 
-  .banner .banner-content .banner-bg {
+  .banner-index-bg {
     margin-top: 18px;
   }
 
-  .banner .banner-content .banner-bg .banner-bg-image {
+  .banner-index-bg-image {
     width: 100%;
     height: 100%;
     max-width: 456px;
@@ -1234,27 +1226,27 @@
     margin-bottom: 60px;
   }
 
-  .services .services-content .services-text {
+  .services-text {
     font-size: 34px;
     max-width: none;
   }
 
-  .services .services-content .services-cards-container {
+  .services-cards-container {
     grid-template-columns: 1fr;
   }
 
-  .services .services-content .services-cards-container .services-card {
+  .services-card {
     display: grid;
     grid-template-columns: 35px 1fr;
     grid-gap: 13px;
   }
 
-  .services .services-content .services-cards-container .services-card .services-card-image-container {
+  .services-card-image-container {
     width: 35px;
     height: 35px;
   }
 
-  .services .services-content .services-cards-container .services-card .services-card-text .services-card-main-text {
+  .services-card-main-text {
     margin-bottom: 3px;
   }
 
@@ -1262,25 +1254,25 @@
     margin-bottom: 35px;
   }
 
-  .benefits .benefits-content .benefits-container {
+  .benefits-container {
     padding: 20px 40px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-text {
+  .benefits-text {
     font-size: 26px;
     margin-bottom: 16px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-list {
+  .benefits-list {
     grid-gap: 15px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-list .benefits-list-point {
+  .benefits-list-point {
     grid-template-columns: 61px 1fr;
     grid-gap: 10px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-list .benefits-list-point .benefits-list-point-image-container {
+  .benefits-list-point-image-container {
     width: 61px;
     height: 61px;
     margin-right: 10px;
@@ -1290,22 +1282,22 @@
     margin-bottom: 35px;
   }
 
-  .symptoms .symptoms-content .symptoms-text {
+  .symptoms-text {
     font-size: 26px;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container {
+  .symptoms-cards-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-text {
+  .symptoms-card-text {
     font-size: 20px;
     margin-bottom: 5px;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-image-container {
+  .symptoms-card-image-container {
     width: 85px;
     height: 85px;
     margin: 15px auto;
@@ -1320,32 +1312,32 @@
     margin-bottom: 35px;
   }
 
-  .expectations .expectations-content .expectations-text {
+  .expectations-text {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 16px;
   }
 
-  .expectations .expectations-content .expectations-list {
+  .expectations-list {
     grid-gap: 10px;
     margin-bottom: 17px;
   }
 
-  .expectations .expectations-content .expectations-list .expectations-list-point {
+  .expectations-list-point {
     padding: 10px 12px;
   }
 
-  .expectations .expectations-content .expectations-list .expectations-list-point .expectations-list-point-text {
+  .expectations-list-point-text {
     font-size: 14px;
     line-height: 20px;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row::before {
+  .expectations-row::before {
     font-size: 14px;
     margin-bottom: 2px;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row .expectations-row-second-text {
+  .expectations-row .expectations-row-second-text {
     font-size: 14px;
   }
 
@@ -1353,34 +1345,34 @@
     margin-bottom: 70px;
   }
 
-  .certificate .certificate-content {
+  .certificate-content {
     position: relative;
   }
 
-  .certificate .certificate-content .certificate-text {
+  .certificate-text {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 14px;
   }
 
-  .certificate .certificate-content .swiper {
+  .swiper {
     position: relative;
   }
 
-  .certificate .certificate-content .swiper .swiper-container {
+  .swiper-container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide {
+  .swiper-slide {
     padding-right: 20px;
     width: 300px;
     position: relative;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container {
+  .swiper-slide-container {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -1399,13 +1391,13 @@
     padding: 8px;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image {
+  .swiper-slide-image {
     width: 100%;
     height: 100%;
     border-radius: 5px;
   }
 
-  .certificate .certificate-content .sw-nav .sw-prev {
+  .sw-nav .sw-prev {
     margin-right: 100px;
   }
 
@@ -1413,34 +1405,34 @@
     margin-bottom: 0px;
   }
 
-  .question-answer .question-answer-content {
+  .question-answer-content {
     max-width: 800px;
   }
 
-  .question-answer .question-answer-content .question-answer-text {
+  .question-answer-text {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: -10px;
   }
 
-  .question-answer .question-answer-content .question-answer-list .question-answer-list-point {
+  .question-answer-list-point {
     padding: 0;
   }
 
-  .question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container {
+  .question-answer-list-point-main-text-container {
     padding: 10px 0;
     display: grid;
     grid-template-columns: 1fr 32px;
   }
 
-  .question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-main-text-container .question-answer-list-point-main-text {
+  .question-answer-list-point-main-text {
     margin-right: 20px;
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
   }
 
-  .question-answer .question-answer-content .question-answer-list .question-answer-list-point .question-answer-list-point-second-text-container .question-answer-list-point-second-text {
+  .question-answer-list-point-second-text {
     font-weight: 400;
     font-size: 14px;
     line-height: 21px;
@@ -1449,35 +1441,35 @@
 }
 
 @media screen and (max-width: 600px) {
-  .banner {
+  .banner-index {
     padding-top: 90px;
   }
 
-  .banner .banner-content .banner-circle {
+  .banner-index-circle {
     top: -18px;
     left: 5px;
     width: 37px;
     height: 37px;
   }
 
-  .banner .banner-content .banner-text-container {
+  .banner-index-text-container {
     max-width: 500px;
   }
 
-  .banner .banner-content .banner-text-container .banner-text-main {
+  .banner-index-text-main {
     font-size: 28px;
     margin-bottom: 4px;
     line-height: 32px;
   }
 
-  .banner .banner-content .banner-text-container .banner-text-second {
+  .banner-index-text-second {
     font-size: 15px;
     line-height: 21px;
     max-width: 480px;
     margin-bottom: 16px;
   }
 
-  .banner .banner-content .banner-text-container .banner-text-button {
+  .banner-index-text-button {
     font-size: 18px;
     width: 293px;
     padding: 0;
@@ -1497,24 +1489,24 @@
     margin-bottom: 40px;
   }
 
-  .services .services-content .services-text {
+  .services-text {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 16px;
   }
 
-  .benefits .benefits-content .benefits-container {
+  .benefits-container {
     padding: 20px 15px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-text {
+  .benefits-text {
     font-size: 26px;
     line-height: 26px;
     margin-bottom: 16px;
     max-width: 280px;
   }
 
-  .benefits .benefits-content .benefits-container .benefits-list .benefits-list-point {
+  .benefits-list-point {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
@@ -1524,19 +1516,19 @@
     margin-bottom: 35px;
   }
 
-  .symptoms .symptoms-content .symptoms-text {
+  .symptoms-text {
     font-size: 26px;
     line-height: 32px;
     margin-bottom: 23px;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container {
+  .symptoms-cards-container {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
   }
 
-  .symptoms .symptoms-content .symptoms-cards-container .symptoms-card .symptoms-card-image-container {
+  .symptoms-card-image-container {
     width: 85px;
     height: 85px;
     margin: 20px auto;
@@ -1547,7 +1539,7 @@
     display: none;
   }
 
-  .expectations .expectations-content .expectations-table .expectations-row .expectations-row-second-text {
+  .expectations-row-second-text {
     margin-top: 3px;
   }
 
@@ -1555,33 +1547,33 @@
     margin-bottom: 70px;
   }
 
-  .certificate .certificate-content {
+  .certificate-content {
     position: relative;
   }
 
-  .certificate .certificate-content .certificate-text {
+  .certificate-text {
     font-size: 32px;
     margin-bottom: 20px;
   }
 
-  .certificate .certificate-content .swiper {
+  .swiper {
     position: relative;
   }
 
-  .certificate .certificate-content .swiper .swiper-container {
+  .swiper-container {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide {
+  .swiper-slide {
     padding-right: 0px;
     width: 300px;
     position: relative;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container {
+  .swiper-slide-container {
     text-align: center;
     font-size: 18px;
     background: #fff;
@@ -1600,13 +1592,13 @@
     padding: 8px;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image {
+  .swiper-slide-image {
     width: 100%;
     height: 100%;
     border-radius: 5px;
   }
 
-  .certificate .certificate-content .swiper .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-container .swiper-slide-image-more-container {
+  .swiper-slide-image-more-container {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1620,7 +1612,7 @@
     height: 49px;
   }
 
-  .certificate .certificate-content .sw-nav .sw-prev {
+  .sw-prev {
     margin-right: 20px;
   }
 }
